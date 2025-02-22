@@ -6,57 +6,96 @@
     <title>♻️ Reloop ZeroX | Transforming Waste into Wealth</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f5f5f5;
+            background-color: #f0f9f0;
             color: #333;
             line-height: 1.6;
+            scroll-behavior: smooth;
         }
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(135deg, #4CAF50, #45a049);
             color: white;
-            padding: 2rem 0;
+            padding: 3rem 0;
             text-align: center;
+            border-radius: 0 0 30px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        header h1 {
+            font-size: 3rem;
+        }
+        header p {
+            font-size: 1.25rem;
         }
         section {
-            padding: 2rem;
+            padding: 3rem 1rem;
             text-align: center;
         }
         .cta-btn {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #ffffff;
+            color: #4CAF50;
             padding: 1rem 2rem;
-            border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             text-decoration: none;
-            font-size: 1rem;
-            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
         .cta-btn:hover {
-            background-color: #45a049;
+            background-color: #4CAF50;
+            color: white;
         }
-        .features, .impact, .contact, .feedback {
+        .features, .impact, .feedback {
             background-color: white;
-            margin: 1rem auto;
-            max-width: 800px;
+            margin: 1.5rem auto;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+        }
+        .features ul {
+            list-style-type: none;
+            padding-left: 0;
+            font-size: 1.1rem;
+        }
+        .features li {
+            margin: 0.5rem 0;
+        }
+        .impact p {
+            font-size: 1.15rem;
+        }
+        iframe {
+            width: 100%;
+            height: 600px;
+            border: none;
             border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-            padding: 2rem;
         }
         footer {
             text-align: center;
             padding: 1rem;
             background-color: #333;
             color: white;
+            border-radius: 30px 30px 0 0;
         }
         a {
             color: #4CAF50;
         }
-        iframe {
-            width: 100%;
-            height: 600px;
-            border: none;
+        .about {
+            background-color: #e9f7ef;
+            margin: 1.5rem auto;
+            max-width: 900px;
+            border-radius: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            padding: 2.5rem;
+        }
+        .about h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        .about p {
+            font-size: 1.15rem;
         }
     </style>
 </head>
@@ -67,6 +106,11 @@
         <a class="cta-btn" href="#feedback">Provide Feedback</a>
     </header>
 
+    <section class="about">
+        <h2>About Reloop ZeroX</h2>
+        <p>Reloop ZeroX is an innovative platform leveraging AI to power circular economy solutions. Our mission is to turn waste into economic opportunities by promoting reuse, resale, and recycling. We empower individuals and businesses to minimize waste, reduce carbon footprints, and unlock financial value through carbon credit trading.</p>
+    </section>
+
     <section class="features">
         <h2>What We Do</h2>
         <p>Reloop ZeroX uses AI to drive a circular economy by enabling product reuse, resale, and recycling while tracking carbon savings for market-tradable carbon credits.</p>
@@ -74,10 +118,10 @@
 
     <section class="features">
         <h2>Key Features</h2>
-        <ul style="list-style-type:none; padding-left:0;">
-            <li>⚡ AI-powered product repurposing</li>
-            <li>🌱 Carbon credit tracking and trading</li>
-            <li>♻️ Sustainable waste management solutions</li>
+        <ul>
+            <li>⚡ AI-powered product repurposing — Efficiently identify new uses for existing products.</li>
+            <li>🌱 Carbon credit tracking and trading — Monitor and monetize carbon savings on the market.</li>
+            <li>♻️ Sustainable waste management solutions — Reducing waste with eco-friendly processes.</li>
         </ul>
     </section>
 
@@ -86,16 +130,10 @@
         <p>We reduce landfill waste, cut carbon emissions, and unlock economic value by transforming waste into marketable assets while enabling financial returns through carbon credit trading.</p>
     </section>
 
-    <section class="contact">
-        <h2>Stay Connected</h2>
-        <p>Have questions or want to partner with us? <br> Contact us at: <a href="mailto:info@reloopzerox.com">info@reloopzerox.com</a></p>
-    </section>
-
     <section id="feedback" class="feedback">
         <h2>We Value Your Feedback</h2>
         <p>Please fill out the form below to share your thoughts and join our community.</p>
-        <!-- Replace the link below with your actual Google Form link -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfBWO2VHmGy4MhBC157aOuuaQJPrcLvoa7u6KIk_ZG1o0sGCg/viewform?usp=header">Loading…</iframe>
+        <iframe src="https://docs.google.com/forms/d/e/your-google-form-id/viewform?embedded=true">Loading…</iframe>
     </section>
 
     <footer>
